@@ -1,25 +1,15 @@
 import java.io.IOException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.util.Collections;
-import java.util.Date;
 import java.util.Map;
 import java.util.Random;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.nio.entity.NStringEntity;
-import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.Response;
 import org.elasticsearch.client.RestClient;
-import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.common.transport.InetSocketTransportAddress;
-import org.elasticsearch.common.xcontent.XContentBuilder;
-import org.elasticsearch.common.xcontent.XContentFactory;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
-import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
